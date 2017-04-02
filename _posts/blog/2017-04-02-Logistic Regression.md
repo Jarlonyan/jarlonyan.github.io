@@ -48,7 +48,7 @@ J(w)&=\sum_{i=1}^m {\ell(y_i,p(y_i\big| x_i))}  \\
 \end{alignat}
 \tag{6}$$
 
-+ 为了简单起见，公式中的$x$，$w$用增广向量表示，用$f(wx)$来表示$p(y=1|x)$，。那么：
++ 为了简单起见，公式中的$x$，$w$用增广向量表示，用$f(wx)$来表示$p(y=1|x)$ 。那么：
 $$J(w)=\sum_{i=1}^m{-y_i\cdot \log{f(w \cdot x_i)}-(1-y_i)\cdot  \log{\left[ 1-f(w \cdot x_i)\right]}}
 \tag{7}$$
 

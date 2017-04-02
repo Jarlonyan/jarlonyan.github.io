@@ -60,6 +60,28 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 此外，参考[Github Pages + Jekyll 独立博客一小时快速搭建&上线指南](http://playingfingers.com/2016/03/26/build-a-blog/)  和 [从零开始折腾Jekyll
 ——使用Jekyll模板](http://bluebiu.com/blog/learn-to-use-jekyll.html#fn:note_3) 可以迅速入门。
 
+关于公示，编辑`_config.yml`, `markdown: kramdown`,然后请在header.html文件的head中添加：
+
+```
+<!--MathJax的配置脚本，用于临时简单的配置 -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    <!--输入Latex公式，以HTML和CSS的形式显示输出 -->
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      <!--$表示行内元素，$$表示块状元素 -->
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<!--加载MathJax的最新文件， async表示异步加载进来 -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+</script>
+```
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
