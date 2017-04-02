@@ -8,7 +8,7 @@ menu: 链接
 permalink: /links/
 ---
 
-一些很不错的博客
+友情链接
 
 {% for link in site.data.links %}
 * [{{ link.name }}]({{ link.url }})
