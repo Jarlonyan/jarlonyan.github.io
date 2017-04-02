@@ -6,9 +6,6 @@ description:
 keywords: Logistic Regression
 ---
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
 
 # 1.已知
 + 假设样本$x$是正样本的概率：
