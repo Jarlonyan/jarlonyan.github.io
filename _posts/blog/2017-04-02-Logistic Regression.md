@@ -6,9 +6,6 @@ description:
 keywords: Logistic Regression
 ---
 
-
-![](/images/blog/the-kite-runner.png)
-
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
@@ -20,6 +17,7 @@ $$p(y=1|x) = \frac{1}{1+e^{-(wx+b)}}
 
 + 将上面这个$sigmoid$函数看做是$f(x)$
 这个$f(x)$特点:
+</br>
 $$f^{'}(x)=f(x)\cdot \big( 1-f(x) \big)
 \tag{2}$$
 
@@ -37,6 +35,7 @@ $$\ell(y, p(y|x))=\begin{cases}
 \tag{4}$$
 
 + 将上面的式子写成一个式子
+</br>
 $$\ell(y, p(y|x))=-y\cdot{\log{p(y=1\big| x)}}-(1-y)\cdot{\log{\left[ 1-p(y=1\big| x)\right]}}
 \tag{5}$$
 
@@ -49,6 +48,7 @@ J(w)&=\sum_{i=1}^m {\ell(y_i,p(y_i\big| x_i))}  \\
 \tag{6}$$
 
 + 为了简单起见，公式中的$x$，$w$用增广向量表示，用$f(wx)$来表示$p(y=1|x)$ 。那么：
+</br>
 $$J(w)=\sum_{i=1}^m{-y_i\cdot \log{f(w \cdot x_i)}-(1-y_i)\cdot  \log{\left[ 1-f(w \cdot x_i)\right]}}
 \tag{7}$$
 
