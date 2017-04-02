@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logistic Regression推导
-categories: Blog
+categories: Machine Learning
 description: 
 keywords: Logistic Regression
 ---
