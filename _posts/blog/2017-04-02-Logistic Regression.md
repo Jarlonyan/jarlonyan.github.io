@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logistic Regression推导
-categories: Machine_Learning
+categories: 机器学习
 description: 
 keywords: Logistic Regression
 ---
