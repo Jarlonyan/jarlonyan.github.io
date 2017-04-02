@@ -6,7 +6,6 @@ description:
 keywords: Logistic Regression
 ---
 
-> Logistic Regression推导
 
 ![](/images/blog/the-kite-runner.png)
 
@@ -72,7 +71,7 @@ $$\begin{align*}
 $$w=w-\eta \cdot \frac{\partial J(w)}{\partial w}
 \tag{12}$$
 
-##3.2 牛顿法
+## 3.2 牛顿法
 
 $$w=w-\eta \cdot \frac{ J^{'}(w)}{ J^{''}(w)}=w-\eta \cdot \frac{\partial ^ 2 J(w)}{ \partial w \cdot \partial w^{T}  }  \tag{13}
 $$
