@@ -8,11 +8,11 @@ keywords: Logistic Regression
 
 
 # 1.已知
-+ 假设样本$x$是正样本的概率：
++ 假设样本 $x$ 是正样本的概率：
 $$p(y=1|x) = \frac{1}{1+e^{-(wx+b)}}
 \tag{1}$$
 
-+ 将上面这个$sigmoid$函数看做是$f(x)$
++ 将上面这个 $sigmoid$ 函数看做是 $f(x)$ 
 这个$f(x)$特点:
   
 $$f^{'}(x)=f(x)\cdot \big( 1-f(x) \big)
@@ -20,11 +20,11 @@ $$f^{'}(x)=f(x)\cdot \big( 1-f(x) \big)
 
 + $loss \, function$:
 $$\ell(y, p(y|x))=-\log{p(y|x)}
-\tag{3}$$ 
+\tag{3} $$ 
 
 # 2. 推导过程
 
-+ 上面的$loss \, function$等价于
++ 上面的 $loss \, function$ 等价于
 $$\ell(y, p(y|x))=\begin{cases}
             -\log{p(y=1 \big| x)}, \qquad y=1 \\
             -\log{\left[ 1-p(y=1\big| x) \right] }, y=0
@@ -44,7 +44,7 @@ J(w)&=\sum_{i=1}^m {\ell(y_i,p(y_i\big| x_i))}  \\
 \end{alignat}
 \tag{6}$$
 
-+ 为了简单起见，公式中的$x$，$w$用增广向量表示，用 $f(wx)$ 来表示 $p(y=1|x)$ 。那么：
++ 为了简单起见，公式中的 $x$ ，$w$ 用增广向量表示，用 $f(wx)$ 来表示 $p(y=1|x)$ 。那么：
   
 $$J(w)=\sum_{i=1}^m{-y_i\cdot \log{f(w \cdot x_i)}-(1-y_i)\cdot  \log{\left[ 1-f(w \cdot x_i)\right]}}
 \tag{7}$$
