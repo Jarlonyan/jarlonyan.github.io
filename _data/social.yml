@@ -1,27 +1,23 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
+  name: Jarlonyan
+  url: https://github.com/Jarlonyan
 
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
+- sitename: 蚂蚁博客
+  name: Jarlonyan
+  url: http://blog.leanote.com/jarlonyan
 
 - sitename: LinkedIn
   name: mazhuang
   url: https://www.linkedin.com/in/mazhuang
 
-- sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
+- sitename: GigLab
+  name: Jarlonyan
+  url: https://gitlab.com/Jarlonyan
 
 - sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
+  name: 阆苑醉侠
+  url: http://weibo.com/u/1756759605
 
 - sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
-
-- sitename: 豆瓣
-  name: 壮哥不胖
-  url: http://www.douban.com/people/freedim
+  name: Jarlonyan
+  url: https://www.zhihu.com/people/jarlonyan/activities
