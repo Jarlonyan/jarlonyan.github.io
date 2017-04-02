@@ -18,10 +18,6 @@ layout: default
 <!-- / .banner -->
  <section class="container content">
         <div class="columns">
-            <div class="column one-third">
-                {% include sidebar-search.html %}
-                {% include sidebar-popular-repo.html %}
-            </div>
             <div class="column two-thirds" >
                 <article class="article-content kramdown-body">
                     {{ content }}
@@ -34,7 +30,10 @@ layout: default
                     {% include comments.html %}
                 </div>
             </div>
-            
+            <div class="column one-third">
+                {% include sidebar-search.html %}
+                {% include sidebar-popular-repo.html %}
+            </div>
         </div>
     </section>
     <!-- /section.content -->
