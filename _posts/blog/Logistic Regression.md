@@ -8,13 +8,10 @@ keywords: Logistic Regression
 
 > Logistic Regression推导
 
-![](/images/blog/the-kite-runner.png)
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
+[TOC]
 
-# 1.已知
+#1.已知
 + 假设样本$x$是正样本的概率：
 $$p(y=1|x) = \frac{1}{1+e^{-(wx+b)}}
 \tag{1}$$
@@ -28,7 +25,7 @@ $$f^{'}(x)=f(x)\cdot \big( 1-f(x) \big)
 $$\ell(y, p(y|x))=-\log{p(y|x)}
 \tag{3}$$ 
 
-# 2. 推导过程
+#2. 推导过程
 
 + 上面的$loss \, function$等价于
 $$\ell(y, p(y|x))=\begin{cases}
@@ -65,9 +62,9 @@ $$\begin{align*}
 \end{align*}$$
 
 
-# 3. 求解方法
+#3. 求解方法
 
-## 3.1 梯度下降法
+##3.1 梯度下降法
 
 $$w=w-\eta \cdot \frac{\partial J(w)}{\partial w}
 \tag{12}$$
