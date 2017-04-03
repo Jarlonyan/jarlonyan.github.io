@@ -8,7 +8,7 @@
 
    从你的Github上用git把刚刚生成好的 `yourusername.github.io` 项目clone下来，假设放在一个叫myblog的目录中。（在你的项目的右上角点击 `clone or download` 得到SSH的地址）
    ```
-   git clone git@github.com:用户名/用户名.github.io.git
+   git clone git@github.com:用户名/用户名.github.io.git myblog/
    ```
    
    到项目目录中，把除了 `.git/` 之外的其他文件夹全删了,（没错，一点不留，全删）。
