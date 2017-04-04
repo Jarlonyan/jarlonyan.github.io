@@ -15,3 +15,10 @@
 
 - name: FreeMind
   url: http://freemind.pluskid.org/archive/
+
+- name: vividfree
+  url: http://vividfree.github.io/archive
+
+- name: 推荐系统github
+  url: https://github.com/Flowerowl/Big_Data_Resources
+  
