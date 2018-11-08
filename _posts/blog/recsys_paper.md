@@ -17,7 +17,7 @@
     + 在两个real-world数据集上做了大量实验，结果证明了NCF的有效性，并且展示了神经网络做协同过滤的希望。
 + 举证分解 
     ![IMAGE](/images/blog/recsys_paper/7B1446EAB408C6D4626E2656E9194DF7.jpg)
-    ![IMAGE](/images/blog/recsys_paper/6408FE36F565AD57E77F816142F2477C.jpg=1200x838)
+    ![IMAGE](/images/blog/recsys_paper/6408FE36F565AD57E77F816142F2477C.jpg)
 
 
 # 3.【2018-KDD】 Learning Tree-based Deep Model for Recommender Systems --- 阿里的TDM
@@ -39,17 +39,17 @@
 
 
 + DMF模型架构
-![IMAGE](/images/blog/recsys_paper/8C649289255F996C536197CE7956D637.jpg =1776x1002)
+![IMAGE](/images/blog/recsys_paper/8C649289255F996C536197CE7956D637.jpg)
 
 + Loss Function
     + Squared Loss:
-        ![IMAGE](/images/blog/recsys_paper/0ECEF10C1F06A4856BE9F6DDE0C282CB.jpg =1592x154) 
+        ![IMAGE](/images/blog/recsys_paper/0ECEF10C1F06A4856BE9F6DDE0C282CB.jpg) 
     + Cross Entropy
-        ![IMAGE](/images/blog/recsys_paper/1435197F300964FAA0497D792AED95C7.jpg =1578x182)
+        ![IMAGE](/images/blog/recsys_paper/1435197F300964FAA0497D792AED95C7.jpg)
     + NCE(本文提出的，跟NCE不一样)
-        ![IMAGE](/images/blog/recsys_paper/24DFD94C474A4CEAF261521B8988EF89.jpg =1602x164)
+        ![IMAGE](/images/blog/recsys_paper/24DFD94C474A4CEAF261521B8988EF89.jpg)
 
-    其中，![IMAGE](/images/blog/recsys_paper/575BB0280B690F406D068F538CEF42A8.jpg =10x15) 是原始的评分矩阵。
+    其中，![IMAGE](/images/blog/recsys_paper/575BB0280B690F406D068F538CEF42A8.jpg) 是原始的评分矩阵。
 
 
 # 5.【ICML-2015 workshop】Siamese Neural Networks for One-shot Image Recognition ---孪生网络
@@ -57,7 +57,7 @@
 + 论文链接：https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf
 + 参考链接：https://www.cnblogs.com/king-lps/p/8342452.html
 
-![IMAGE](/images/blog/recsys_paper/D2F4C8269DAE423540F366F4B4DBF745.jpg =1250x536)
+![IMAGE](/images/blog/recsys_paper/D2F4C8269DAE423540F366F4B4DBF745.jpg)
 
 
 
@@ -72,7 +72,7 @@
     + Triplet Loss最早在FaceNet的论文中提出，用来学习人脸的向量表示。简单来说，triplet loss的目标是：
         - 两个具有同样标签的样本，他们在新的编码空间里距离很近。
         - 两个具有不同标签的样本，他们在新的编码空间里距离很远。
-    ![IMAGE](/images/blog/recsys_paper/49DDB2A0C60DAF9D868ECDE35C532C37.jpg =877x361)
+    ![IMAGE](/images/blog/recsys_paper/49DDB2A0C60DAF9D868ECDE35C532C37.jpg)
 
 + 摘要：
     在人脸识别场景中，已经有很多经典的工作了。本文提出一个系统，叫做FaceNet，它能够直接学习到一个映射：人脸图片到一个dense的欧氏空间，其中距离可以直接对应于人脸相似度。一旦这个空间产生了，那诸如人脸识别、验证、聚类都可以简单地实现。
@@ -82,19 +82,19 @@
 
 
 + Triplet Loss
-    ![IMAGE](/images/blog/recsys_paper/6CCB412D38C1E6860FE9AE19809A1E52.jpg =1288x216)
-    ![IMAGE](/images/blog/recsys_paper/7D7126E096AC4610F706154D756F916E.jpg =1212x228)
+    ![IMAGE](/images/blog/recsys_paper/6CCB412D38C1E6860FE9AE19809A1E52.jpg)
+    ![IMAGE](/images/blog/recsys_paper/7D7126E096AC4610F706154D756F916E.jpg)
 
-    embedding表示成为： ![IMAGE](recsys_paper/6BBAE6C267F80E126B36BCA3B15534CA.jpg =70x20) ，它将一个图片x映射到d维的欧氏空间。此外，我们限制这个embedding到d维的超球体，也就是说 ![IMAGE](recsys_paper/F5A30B28FDD62E2FB9D67815F26FBC05.jpg =70x20)，
+    embedding表示成为： ![IMAGE](recsys_paper/6BBAE6C267F80E126B36BCA3B15534CA.jpg) ，它将一个图片x映射到d维的欧氏空间。此外，我们限制这个embedding到d维的超球体，也就是说 ![IMAGE](recsys_paper/F5A30B28FDD62E2FB9D67815F26FBC05.jpg)，
     
     考虑一个三元组（Triplet）:
     + anchor（基准正例）
     + a positive of the same class as the anchor（正例）
     + a negative of a different class（负例）
     
-    三元组的表示分别为：![IMAGE](/images/blog/recsys_paper/6C7572933678F49166486DBB457E4BAE.jpg =132x25)，我们希望：
+    三元组的表示分别为：![IMAGE](/images/blog/recsys_paper/6C7572933678F49166486DBB457E4BAE.jpg)，我们希望：
     
-    ![IMAGE](/images/blog/recsys_paper/CF9172729F2820C491B3F1AE61FE5CBA.jpg =1282x104)
+    ![IMAGE](/images/blog/recsys_paper/CF9172729F2820C491B3F1AE61FE5CBA.jpg)
     
-    其中，![IMAGE](/images/blog/recsys_paper/9DF77483D94C9B7306831F3D1E2F0E68.jpg =20x20) 表示正负例的边界，整体就是max margin的思想。所以Triplet loss定义为：
-    ![IMAGE](/images/blog/recsys_paper/1E9C1E5C94DC742700F154916CC64A0B.jpg =868x88)
+    其中，![IMAGE](/images/blog/recsys_paper/9DF77483D94C9B7306831F3D1E2F0E68.jpg) 表示正负例的边界，整体就是max margin的思想。所以Triplet loss定义为：
+    ![IMAGE](/images/blog/recsys_paper/1E9C1E5C94DC742700F154916CC64A0B.jpg)
