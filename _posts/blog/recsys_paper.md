@@ -16,8 +16,8 @@
     + 本文证明了MF可以理解为NCF的特例。并且使用MLP来赋予NCF高level的非线性
     + 在两个real-world数据集上做了大量实验，结果证明了NCF的有效性，并且展示了神经网络做协同过滤的希望。
 + 举证分解 
-    ![IMAGE](/images/blog/recsys_paper/7B1446EAB408C6D4626E2656E9194DF7.jpg =1016x672)
-    ![IMAGE](/images/blog/recsys_paper/6408FE36F565AD57E77F816142F2477C.jpg =1200x838)
+    ![IMAGE](/images/blog/recsys_paper/7B1446EAB408C6D4626E2656E9194DF7.jpg)
+    ![IMAGE](/images/blog/recsys_paper/6408FE36F565AD57E77F816142F2477C.jpg=1200x838)
 
 
 # 3.【2018-KDD】 Learning Tree-based Deep Model for Recommender Systems --- 阿里的TDM
