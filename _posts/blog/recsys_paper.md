@@ -85,7 +85,7 @@
     ![IMAGE](/images/blog/recsys_paper/6CCB412D38C1E6860FE9AE19809A1E52.jpg)
     ![IMAGE](/images/blog/recsys_paper/7D7126E096AC4610F706154D756F916E.jpg)
 
-    embedding表示成为： ![IMAGE](recsys_paper/6BBAE6C267F80E126B36BCA3B15534CA.jpg) ，它将一个图片x映射到d维的欧氏空间。此外，我们限制这个embedding到d维的超球体，也就是说 ![IMAGE](recsys_paper/F5A30B28FDD62E2FB9D67815F26FBC05.jpg)，
+    embedding表示成为： ![IMAGE](/images/blog/recsys_paper/6BBAE6C267F80E126B36BCA3B15534CA.jpg) ，它将一个图片x映射到d维的欧氏空间。此外，我们限制这个embedding到d维的超球体，也就是说 ![IMAGE](/images/blog/recsys_paper/F5A30B28FDD62E2FB9D67815F26FBC05.jpg)，
     
     考虑一个三元组（Triplet）:
     + anchor（基准正例）
